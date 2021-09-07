@@ -1,0 +1,33 @@
+label {
+    padding: 16px 16px 16px 60px;
+    width: 100%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    font-size: 20px;
+    display: block;
+    cursor: pointer;
+  }
+  .active {
+    opacity: 0.3;
+    text-decoration: line-through;
+  }
+  div {
+    position: relative;
+  }
+  .check {
+    width: 20px;
+    position: absolute;
+    top: 16px;
+    left: 20px;
+  }
+  .trash {
+    width: 20px;
+    position: absolute;
+    top: 16px;
+    right: 40px;
+    opacity: 0.1;
+  }
+  .trash:hover {
+    opacity: 1;
+    cursor: pointer;
+  }
+  
