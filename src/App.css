@@ -20,7 +20,6 @@
     top: 100px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
   }
-  
   form input {
     padding: 16px 16px 16px 60px;
     width: 100%;
@@ -34,5 +33,10 @@
   
   .box-todolist {
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    max-height: 224.8px;
+    overflow-y: auto;
   }
-  
+
+  #App {
+    position: relative;
+  }
