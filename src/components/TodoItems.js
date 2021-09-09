@@ -4,7 +4,6 @@ import { useState } from "react";
 import checkdone from "./icon/checked.svg";
 import checkNoteDone from "./icon/check-mark.svg";
 import trash from './icon/trash.svg';
-
 function TodoItems(props) {
   const [done, setDone] = useState(true);
   const [className, setClassName] = useState("");
@@ -14,7 +13,7 @@ function TodoItems(props) {
 
   function clickItems() {//Handler sự kiện click vào item, nếu item đã hoàn thành thì bôi đen nó, nếu chưa thì làm sáng nó lên
     if (done) {
-      setClassName('active');
+      setClassName('actives');
       setUrl(checkdone);
       setDone(false);
     } else {
