@@ -57,7 +57,7 @@ function App() {
 
 
   return (
-      <div id="App">
+    <div id="App">
       <form onSubmit={handlerSubmit}>
         <input
           placeholder="What need todo done?"
@@ -72,6 +72,7 @@ function App() {
         {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
         <Switch>
+
           <Route path="/React-dom">
             <List
               className="box-todolist"
@@ -81,21 +82,23 @@ function App() {
               width={550}
             >
               {({ index, style }) => (
-                // <TodoItems list={data[index]} style = {style}/>
-                <div style = {style}><TodoItems list={data[index]}/></div>
+                <div style = {style}> <TodoItems list={data[index]}/> </div>
               )}
             </List>
           </Route>
+
           <Route path="/Infinity-scroll">
             <div className="box-todolist" onScroll = {handlerScroll}>{TodoList}</div>
           </Route>
+
           <Route path="/">
-          <div className="box-todolist">{TodoList}</div>
+            <div className="box-todolist">{TodoList}</div>
           </Route>
+
         </Switch>
       </div>
     </Router>
-    </div>
+  </div>
   );
 }
 
